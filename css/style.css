@@ -1,0 +1,124 @@
+body {
+  font-family: Roboto;
+  font-weight: 200;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+/* Header */
+header {
+  display: inline;
+  color: #f4f4f4;
+}
+
+header #header-name {
+  color: #ecf0f1;
+  float: left;
+  padding-left: 16%;
+  padding-top: 2.6%;
+}
+
+header ul {
+  display: inline;
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 3.5%;
+  padding-right: 16%;
+}
+
+header li {
+  float: left;
+}
+
+header li a {
+  color: #ecf0f1;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header li a:hover {
+    border-bottom: 1px solid #ecf0f1;
+}
+
+/* Showcase (Big Image at the Top*/
+#showcase {
+  min-height: 100vh;
+  color: #f4f4f4;
+  background-color: #0099ff;
+  padding: 10px;
+}
+
+#title {
+  padding-top: 50vh;
+  font-size: 50px;
+  text-align: left;
+  padding-left: 16%;
+}
+
+#subtitle {
+  font-size: 20px;
+  text-align: left;
+  padding-left: 16%;
+  padding-right: 16%;
+}
+
+/* The break with the text about who I am and stuff */
+#break {
+  min-height: 200px;
+}
+
+/* Boxes */
+#boxes {
+    display; inline;
+}
+
+#sidebox {
+  min-height: 100vh;
+  max-height: 100vh;
+  min-width: 30vw;
+  padding-bottom: 0;
+  background-color: #ffcb05;
+  float: left;
+}
+
+#box1 {
+  height: 100vh;
+  padding-bottom: 0;
+  background-color: #6c7a89;
+}
+
+#box1-content {
+  color: #f4f4f4;
+}
+
+#sidebox2 {
+  background-color: #e74c3c;
+}
+
+#box2 {
+  background-color: #2ecc71;
+}
+
+#buffer {
+  background-color: #0099ff;
+  color: white;
+  min-width: 100px;
+  width: 100%;
+}
+
+.content {
+  padding: 10% 16% 10% 16%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
