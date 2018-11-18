@@ -1,124 +1,103 @@
 body {
-  font-family: Roboto;
-  font-weight: 200;
-  padding: 0;
-  margin: 0;
-  background-color: #f4f4f4;
+  font-family: Lato;
+}
+
+.subtitle {
   text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+/*
+#spotlight-title {
+  color: #ff9f1a;
+  background-color: #fffff;
+  margin-right: -200px;
 }
 
-/* Header */
-header {
-  display: inline;
-  color: #f4f4f4;
+#spotlight-text {
+  padding: 15px;
+  margin-top: 100px;
+  margin-right: -120px;
+  padding-left: 50px;
+
+  color: #000000;
+  text-align: left;
 }
 
-header #header-name {
-  color: #ecf0f1;
-  float: left;
-  padding-left: 16%;
-  padding-top: 2.6%;
-}
-
-header ul {
-  display: inline;
-  float: right;
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  padding-top: 3.5%;
-  padding-right: 16%;
-}
-
-header li {
-  float: left;
-}
-
-header li a {
-  color: #ecf0f1;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-header li a:hover {
-    border-bottom: 1px solid #ecf0f1;
-}
-
-/* Showcase (Big Image at the Top*/
-#showcase {
-  min-height: 100vh;
-  color: #f4f4f4;
-  background-color: #0099ff;
-  padding: 10px;
-}
-
-#title {
-  padding-top: 50vh;
+#spotlight-name {
+  background-color: #ffffff;
+  padding-bottom: -10px;
   font-size: 50px;
-  text-align: left;
-  padding-left: 16%;
+  font-weight: 600;
 }
 
-#subtitle {
+#spotlight-sub {
+  background-color: #ffffff;
+  font-size: 30px;
+  font-weight: lighter;
+  margin-top: -8px;
+  color: #ff9f1a;
+}
+
+#spotlight-exp {
+  background-color: #ffffff;
   font-size: 20px;
-  text-align: left;
-  padding-left: 16%;
-  padding-right: 16%;
+  font-weight: lighter;
+  margin-top: 300px;
+  margin-right: -100px;
+  padding-left: 100px;
+}
+*/
+#GraphicsContainer {
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* The break with the text about who I am and stuff */
-#break {
-  min-height: 200px;
+
+#spotlight {
+  margin-top: 50px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Boxes */
-#boxes {
-    display; inline;
+.navbar {
+  font-size: 25px;
 }
 
-#sidebox {
-  min-height: 100vh;
-  max-height: 100vh;
-  min-width: 30vw;
-  padding-bottom: 0;
-  background-color: #ffcb05;
-  float: left;
+.navbar-brand {
+  font-size: 30px;
+  padding-left: 100px;
 }
 
-#box1 {
-  height: 100vh;
-  padding-bottom: 0;
-  background-color: #6c7a89;
+.navbar-right {
+  float: right;
+  display: inline;
 }
 
-#box1-content {
-  color: #f4f4f4;
+#header {
+  text-align: center;
+  color: #ffffff;
+  background-color: #141414;
+/*
+  margin-left: -500px;
+  margin-right: -500px;*/
 }
 
-#sidebox2 {
-  background-color: #e74c3c;
+#mono {
+  font-size: 100px;
+  font-weight: 100;
+  padding-top: 20px;
 }
 
-#box2 {
-  background-color: #2ecc71;
-}
-
-#buffer {
-  background-color: #0099ff;
-  color: white;
-  min-width: 100px;
-  width: 100%;
-}
-
-.content {
-  padding: 10% 16% 10% 16%;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
+#footer {
+  color: #ffffff;
+  text-align: center;
+  background-color: #141414;
+  min-height: 20vh;
+  min-width: 100vw;
+  margin-left: -16vw;
+  margin-right: -16vw;
+  overflow: hidden;
 }
