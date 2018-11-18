@@ -1,26 +1,103 @@
 body {
-  padding: 0;
-  font-size: 16px;
+  font-family: Lato;
 }
 
-#Sidebar {
-  padding-top: 30px;
-  padding-left: 30px;
-  margin-top: 50px;
-  margin-left: 50px;
-  max-width: 50px;
-  max-height: 50px;
-  min-width: 50px;
-  min-height: 50px;
-  background-color: #000;
-  display: flex;
+.subtitle {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+/*
+#spotlight-title {
+  color: #ff9f1a;
+  background-color: #fffff;
+  margin-right: -200px;
 }
 
+#spotlight-text {
+  padding: 15px;
+  margin-top: 100px;
+  margin-right: -120px;
+  padding-left: 50px;
+
+  color: #000000;
+  text-align: left;
+}
+
+#spotlight-name {
+  background-color: #ffffff;
+  padding-bottom: -10px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#spotlight-sub {
+  background-color: #ffffff;
+  font-size: 30px;
+  font-weight: lighter;
+  margin-top: -8px;
+  color: #ff9f1a;
+}
+
+#spotlight-exp {
+  background-color: #ffffff;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-top: 300px;
+  margin-right: -100px;
+  padding-left: 100px;
+}
+*/
 #GraphicsContainer {
-  display: flex;
-  overflow: hidden;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#Name {
-  color: #fff;
+
+#spotlight {
+  margin-top: 50px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  font-size: 25px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  padding-left: 100px;
+}
+
+.navbar-right {
+  float: right;
+  display: inline;
+}
+
+#header {
+  text-align: center;
+  color: #ffffff;
+  background-color: #141414;
+/*
+  margin-left: -500px;
+  margin-right: -500px;*/
+}
+
+#mono {
+  font-size: 100px;
+  font-weight: 100;
+  padding-top: 20px;
+}
+
+#footer {
+  color: #ffffff;
+  text-align: center;
+  background-color: #141414;
+  min-height: 20vh;
+  min-width: 100vw;
+  margin-left: -16vw;
+  margin-right: -16vw;
+  overflow: hidden;
 }
