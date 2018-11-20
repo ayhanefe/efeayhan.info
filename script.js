@@ -130,7 +130,7 @@ function createScene() {
 
 	// Define the size of the renderer; in this case,
 	// it will fill the entire screen
-	renderer.setSize(WIDTH / 1.5, HEIGHT / 1.5);
+	renderer.setSize(WIDTH, HEIGHT);
 	renderer.setPixelRatio( window.devicePixelRatio );
 
 	// Set background color
@@ -154,7 +154,7 @@ function handleWindowResize() {
 	// update height and width of the renderer and the camera
 	HEIGHT = window.innerHeight;
 	WIDTH = window.innerWidth;
-	renderer.setSize(WIDTH / 1.5, HEIGHT / 1.5);
+	renderer.setSize(WIDTH, HEIGHT);
 	renderer.setPixelRatio( window.devicePixelRatio );
 	camera.aspect = WIDTH / HEIGHT;
 	camera.updateProjectionMatrix();
