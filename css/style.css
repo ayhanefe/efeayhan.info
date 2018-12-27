@@ -1,3 +1,7 @@
+a {
+  text-decoration: none !important;
+}
+
 body {
   font-family: Lato;
 }
@@ -11,7 +15,8 @@ body {
 .navbar {
   margin-left: 20px;
   margin-right: 20px;
-  display: fixed;
+  position: absolute;
+  font-size: 20px;
 }
 
 .nav-item {
@@ -42,10 +47,6 @@ body {
   overflow: hidden;
 }
 
-.navbar {
-  font-size: 20px;
-}
-
 #brand {
   font-size: 30px;
 }
@@ -54,10 +55,11 @@ body {
 #footer {
   color: #ffffff;
   text-align: center;
-  background-color: #141414;
-  min-height: 20vh;
+  background-color:  #141414;
+  min-height: 300px;
   max-width: 800vw;
   overflow: hidden;
+  margin-top: 100px;
 }
 
 .no-gutter > [class*='col-'] {
@@ -68,12 +70,13 @@ body {
 #header {
   text-align: center;
   color: #141414;
+  margin-top: 25px;
 }
 
 #mono {
   font-size: 100px;
   font-weight: 300;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 /* Fill for name */
@@ -157,6 +160,10 @@ body {
   opacity: 1;
 }
 
+#bold {
+  font-weight: 400;
+}
+
 /* Keyframes */
 @-webkit-keyframes fill {
   0% {
@@ -172,4 +179,117 @@ body {
     height: 100%;
     background: #141414;
   }
+}
+
+#heading {
+  font-size: 30px;
+  font-weight: 400;
+  color: White;
+  transition: 1s ease-in-out;
+}
+
+
+#caption:hover #heading{
+  color: #141414;
+  text-decoration: none;
+}
+
+#description {
+  font-size: 50px;
+}
+
+.black {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #141414;
+}
+
+.white {
+  margin-top: 50px;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: White;
+}
+
+.blue {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #00E5EE;
+}
+
+.off-white {
+  min-width: 100vw;
+  background-color: #EAEAEA;
+}
+
+.fa {
+  padding: 40px 20px 10px 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.fa-facebook {
+  color: #3B5998;
+}
+
+.fa-twitter {
+  color: #55ACEE;
+}
+
+.fa-linkedin {
+  color: #0077B5;
+}
+
+.fa-github {
+  color: #141414;
+}
+
+.fa:hover {
+  color: #141414;
+  opacity: 0.5;
+}
+
+.img-box:hover .overlay {
+  opacity: 0.5;
+}
+
+.img-box:hover .overlay-text {
+  opacity: 1;
+}
+
+.square-box {
+  position:relative;
+  overflow:hidden;
+  padding-bottom: 100%;
+}
+
+.square-box img{
+  position: absolute;
+}
+
+.center {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #141414;
+}
+
+.overlay-text {
+  color: White;
+  opacity: 0;
 }
