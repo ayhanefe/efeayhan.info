@@ -17,7 +17,6 @@
     <script src="animation.js"></script>
   </head>
   <body>
-
     <nav class="navbar navbar-expand-md fixed-top">
       <div class="container-fluid">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 fill">
@@ -68,7 +67,7 @@
       <div class="row img-box">
         <div class="col-lg-6">
           <div class="square-box">
-            <img src="img/ben-bench.jpg" class="img-fluid" alt="">
+            <img src="img/ben-bench.jpg" class="img-fluid rounded" alt="">
           </div>
         </div>
         <div class="col-lg-6 img-text">
@@ -83,72 +82,109 @@
   </div>
   <div class="white">
     <h1 class="center">- Research -</h1>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <figure class="img-box" onclick="openTab('b1');" >
-            <img src="img/aachen.jpg" class="img-fluid" alt="">
-            <div class="overlay">
-              <div class="overlay-text center">
-                <h3>Machine Vision for Textile Quality Control</h3><br>
-                <h5>Research Intern</h5> <br>
-                <h5>UROP Program at RWTH Aachen</h5>
-                <h5>Aachen, Germany</h5>
-              </div>
-            </div>
-          </figure>
-        </div>
-
-        <div class="col-xs-12 col-md-6">
-          <figure class="img-box">
-            <img src="img/dna.jpg" class="img-fluid" onclick="openTab('b1');" alt="">
-          </figure>
+    <h4 class="center"> For as long as I can remember, I had passion for discovery and innovation.
+    In university, I have found research to be very rewarding and enjoyable, and I would love to
+    keep on working intellectually challenging problems.</h4>
+    <div class="row-grid">
+      <div class="column-grid">
+        <img src="img/aachen.jpg" alt="UROP" style="width:100%">
+        <div class="overlay" onclick="expandTab('UROP');">
+          <div class="overlay-text center">
+            <h3>Machine Vision for Textile Quality Control</h3><br>
+            <h5>Research Intern</h5> <br>
+            <h5>UROP Program at RWTH Aachen</h5>
+            <h5>Aachen, Germany</h5>
+          </div>
         </div>
       </div>
-      <div id="b1" class="containerTab" style="display:none;">
-        <!-- If you want the ability to close the container, add a close button -->
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">
-          <button class="btn"><i class="fa fa-close"></i></button>
-        </span>
-      </div>
-      <h1 class="center">- Activities- </h1>
-      <div class="row">
-        <div class="col-xs-12 col-md-4">
-          <figure class="img-box">
-            <img src="img/superc.jpg" class="img-fluid" onclick="openTab('b2');" alt="">
-          </figure>
+      <div class="column-grid">
+        <img src="img/dna.jpg" alt="PennAI" style="width:100%" onclick="expandTab(this);">
+        <div class="overlay" onclick="expandTab('PennAI');">
+          <div class="overlay-text center">
+            <h3>Developing an Accessible AI System</h3><br>
+            <h5>Undergraduate Researcher</h5> <br>
+            <h5>Epistatis Lab, Institute for Bioinformatics, U of Penn</h5>
+            <h5>Philadelphia, Pennsylvania</h5>
+          </div>
         </div>
-        <div class="col-xs-12 col-md-4">
-          <figure class="img-box">
-            <img src="img/windsurf.jpg" class="img-fluid" onclick="openTab('b2');" alt="">
-          </figure>
-        </div>
-        <div class="col-xs-12 col-md-4">
-          <figure class="img-box">
-            <img src="img/dna.jpg" class="img-fluid" onclick="openTab('b2');" alt="">
-          </figure>
-        </div>
-      </div>
-      <div id="b2" class="containerTab" style="display:none;background:blue">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-        <h2>Box 2</h2>
-        <p>Lorem ipsum..</p>
-      </div>
-      <h1 class="center">Sometyhing</h1>
-      <div class="row">
-        <div class="col-xs-12">
-          <figure class="img-box">
-            <img src="img/urop2.jpg" class="img-fluid" onclick="openTab('b3');" alt="">
-          </figure>
-        </div>
-      </div>
-      <div id="b3" class="containerTab" style="display:none;background:blue">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-        <h2>Box 2</h2>
-        <p>Lorem ipsum..</p>
       </div>
     </div>
+
+    <div class="container-grid">
+      <div id="expandedUROP">
+        <div class="container border-side">
+          <div class="row">
+            <div class="col">
+              <h1>UROP Program</h1>
+            </div>
+            <div class="col">
+              <span onclick="expandedUROP.parentElement.style.display='none'" class="closebtn" style="color:black">&times;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-grid">
+      <div id="expandedPennAI">
+        <div class="container border-side">
+          <div class="row">
+            <div class="col">
+              <h1>PennAI Research</h1>
+            </div>
+            <div class="col">
+              <span onclick="expandedPennAI.parentElement.style.display='none'" class="closebtn" style="color:black">&times;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="center">- Activities -</h1>
+    <h4 class="center">I like doing stuff and being part of things.</h4>
+    <div class="row-grid">
+      <div class="column-grid-3">
+        <img src="img/penneng.jpg" alt="WS" style="width:100%">
+        <div class="overlay-3" onclick="expandTab('WS');">
+          <div class="overlay-text center">
+            <h3>Clubs</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column-grid-3">
+        <img src="img/windsurf.jpg" alt="WS" style="width:100%">
+        <div class="overlay-3" onclick="expandTab('WS');">
+          <div class="overlay-text center">
+            <h3>Hobbies</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column-grid-3">
+        <img src="img/perry.jpg" alt="WS" style="width:100%">
+        <div class="overlay-3" onclick="expandTab('WS');">
+          <div class="overlay-text center">
+            <h3>Leadership</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row-grid">
+      <div class="container-grid">
+        <div id="expandedWS">
+          <div class="container border-side">
+            <div class="row">
+              <div class="col">
+                <h1>Windsurfing</h1>
+              </div>
+              <div class="col">
+                <span onclick="expandedWS.parentElement.style.display='none'" class="closebtn" style="color:black">&times;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
     <div>
       <div class="" id="footer">

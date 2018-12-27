@@ -8,15 +8,18 @@ function openTab(tabName) {
   document.getElementById(tabName).style.display = "block";
 }
 
-function myFunction(imgs) {
-  // Get the expanded image
-  var expandImg = document.getElementById("expandedImg");
-  // Get the image text
-  var imgText = document.getElementById("imgtext");
-  // Use the same src in the expanded image as the image being clicked on from the grid
-  expandImg.src = imgs.src;
-  // Use the value of the alt attribute of the clickable image as text inside the expanded image
-  imgText.innerHTML = imgs.alt;
-  // Show the container element (hidden with CSS)
-  expandImg.parentElement.style.display = "block";
+function expandTab(tab) {
+  var expand, i, x;
+  x = document.getElementsByClassName("container-grid");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  if (tab == "UROP") {
+    expand = document.getElementById("expandedUROP");
+  } else if (tab == "PennAI") {
+    expand = document.getElementById("expandedPennAI");
+  } else if (tab == "WS") {
+    expand = document.getElementById("expandedWS");
+  }
+  expand.parentElement.style.display = "block";
 }
