@@ -366,34 +366,54 @@ Boat = function () {
   hull.receiveShadow = true;
 
   // Stern
-  var geomStern = new THREE.BoxGeometry(80, 40, 50, 1, 1, 1);
+  var geomStern = new THREE.BoxGeometry(80, 30, 50, 1, 1, 1);
   var matStern = new THREE.MeshPhongMaterial({color:Colors.yellow, shading:THREE.FlatShading});
   var stern = new THREE.Mesh(geomStern, matStern);
-  stern.position.set(-30,30,0);
+  stern.position.set(-30,20,0);
   stern.castShadow = true;
   stern.receiveShadow = true;
 
   // Bow
-  var geomBow = new THREE.BoxGeometry(80, 40, 50, 1, 1, 1);
+  var geomBow = new THREE.BoxGeometry(80, 30, 50, 1, 1, 1);
   var matBow = new THREE.MeshPhongMaterial({color:Colors.yellow, shading:THREE.FlatShading});
   var bow = new THREE.Mesh(geomBow, matBow);
-  bow.position.set(30,40,0);
+  bow.position.set(30,30,0);
   bow.castShadow = true;
   bow.receiveShadow = true;
 
   // Mast
-  var geomMast = new THREE.BoxGeometry(10, 100, 10, 1, 1, 1);
+  var geomMast = new THREE.BoxGeometry(10, 170, 10, 1, 1, 1);
   var matMast= new THREE.MeshPhongMaterial({color:Colors.yellow, shading:THREE.FlatShading});
   var mast = new THREE.Mesh(geomMast, matMast);
   mast.position.set(5,100,0);
   mast.castShadow = true;
   mast.receiveShadow = true;
 
+	// Sail Left
+	var geomSail = new THREE.BoxGeometry(75, 130, 20, 1, 1, 1);
+	var matSail= new THREE.MeshPhongMaterial({color:Colors.yellow, shading:THREE.FlatShading});
+	var sailLeft = new THREE.Mesh(geomSail, matSail);
+	sailLeft.position.set(-40,120,0);
+	sailLeft.castShadow = true;
+	sailLeft.receiveShadow = true;
+	sailLeft.geometry.vertices[5] -= 0.01;
+
+	// Sail Right
+	var geomSail2 = new THREE.BoxGeometry(120, 60, 20, 1, 1, 1);
+	var sailRight = new THREE.Mesh(geomSail2, matSail);
+	sailRight.position.set(42,115,0);
+	sailRight.castShadow = true;
+	sailRight.receiveShadow = true;
+	sailRight.geometry.vertices[5] -= 0.01;
+	sailRight.rotation.z = -Math.PI / 2;
+
   // Add the parts to the boat
   this.mesh.add(hull);
   this.mesh.add(stern);
   this.mesh.add(bow);
   this.mesh.add(mast);
+	this.mesh.add(sailLeft);
+	this.mesh.add(sailRight);
 }
 
 function createBoat () {
