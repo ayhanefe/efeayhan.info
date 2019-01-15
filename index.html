@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" href="img/00e5ee.png">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -17,180 +18,37 @@
     <script src="animation.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 fill">
-          <a class="nav-link" id="brand" href="">EA</a>
-        </div>
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 fill right-align">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="resources/efeAyhan.pdf" target="_blank" type="application/pdf">Resume</a>
-                </li>
-            </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container">
-
-      <div class="" id="header">
-          <h1 id="mono">EFE <strong>AYHAN</strong></h1>
-      </div>
-    </div>
-
-      <div class="" id="spotlight">
-        <div class="">
-          <div id="GraphicsContainer"></div>
-        </div>
-      </div>
-
+    <div class="frame">
       <div class="container">
-        <div class="row">
-          <div class="col-12 subtitle">
-            <h3>I am Efe Ayhan. Computer Science student at University of Pennsylvania.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</h3>
-            <a href="https://www.facebook.com/efe.ayhan.589" target="_blank" class="fa fa-facebook"></a>
-            <a href="https://twitter.com/efeayhann" target="_blank" class="fa fa-twitter"></a>
-            <a href="https://www.linkedin.com/in/efeayhan/" target="_blank" class="fa fa-linkedin"></a>
-            <a href="https://github.com/ayhanefe" target="_blank" class="fa fa-github"></a>
-          </div>
+
+        <div class="" id="header">
+            <h1 id="mono">EFE <strong>AYHAN</strong></h1>
         </div>
+
       </div>
 
-  <div class="off-white">
-    <div class="container">
-      <h1 class="center">Academics</h1>
-      <div class="row img-box">
-        <div class="col-lg-6">
-          <div class="square-box">
-            <img src="img/ben-bench.jpg" class="img-fluid rounded" alt="">
+        <div class="" id="spotlight">
+          <div class="">
+            <div id="GraphicsContainer"></div>
           </div>
         </div>
-        <div class="col-lg-6 img-text">
-          <br>
-          <h3>University of Pennsylvania</h3>
-          <h6>BSE candidate in Computer Science + Economics, Class of 2021</h6>
-          <h6>Philadelphia, PA</h6>
-          <p><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="white">
-    <h1 class="center">- Research -</h1>
-    <h4 class="center"> For as long as I can remember, I had passion for discovery and innovation.
-    In university, I have found research to be very rewarding and enjoyable, and I would love to
-    keep on working intellectually challenging problems.</h4>
-    <div class="row-grid">
-      <div class="column-grid">
-        <img src="img/aachen.jpg" alt="UROP" style="width:100%">
-        <div class="overlay" onclick="expandTab('UROP');">
-          <div class="overlay-text center">
-            <h3>Machine Vision for Textile Quality Control</h3><br>
-            <h5>Research Intern</h5> <br>
-            <h5>UROP Program at RWTH Aachen</h5>
-            <h5>Aachen, Germany</h5>
-          </div>
-        </div>
-      </div>
-      <div class="column-grid">
-        <img src="img/dna.jpg" alt="PennAI" style="width:100%" onclick="expandTab(this);">
-        <div class="overlay" onclick="expandTab('PennAI');">
-          <div class="overlay-text center">
-            <h3>Developing an Accessible AI System</h3><br>
-            <h5>Undergraduate Researcher</h5> <br>
-            <h5>Epistatis Lab, Institute for Bioinformatics, U of Penn</h5>
-            <h5>Philadelphia, Pennsylvania</h5>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="container-grid">
-      <div id="expandedUROP">
-        <div class="container border-side">
+        <div class="container">
           <div class="row">
-            <div class="col">
-              <h1>UROP Program</h1>
-            </div>
-            <div class="col">
-              <span onclick="expandedUROP.parentElement.style.display='none'" class="closebtn" style="color:black">&times;</span>
+            <div class="col-12 subtitle">
+              <a href="about.html" class="link font30">About</a> <span class="del">  /  </span>
+              <a href="education.html" class="link font30">Education</a> <span class="del">  /  </span>
+              <a href="experience.html" class="link font30">Experience</a> <span class="del">  /  </span>
+              <a href="extra.html" class="link font30">Extra</a> <span class="del">  /  </span>
+              <a href="resources/efeAyhan.pdf" class="link font30" target="_blank" type="application/pdf">Resume</a> <br>
+              <a href="https://www.facebook.com/efe.ayhan.589" target="_blank" class="fa fa-facebook"></a>
+              <a href="https://twitter.com/efeayhann" target="_blank" class="fa fa-twitter"></a>
+              <a href="https://www.linkedin.com/in/efeayhan/" target="_blank" class="fa fa-linkedin"></a>
+              <a href="https://github.com/ayhanefe" target="_blank" class="fa fa-github"></a>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="container-grid">
-      <div id="expandedPennAI">
-        <div class="container border-side">
-          <div class="row">
-            <div class="col">
-              <h1>PennAI Research</h1>
-            </div>
-            <div class="col">
-              <span onclick="expandedPennAI.parentElement.style.display='none'" class="closebtn" style="color:black">&times;</span>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-
-    <h1 class="center">- Activities -</h1>
-    <h4 class="center">I like doing stuff and being part of things.</h4>
-    <div class="row-grid">
-      <div class="column-grid-3">
-        <img src="img/penneng.jpg" alt="WS" style="width:100%">
-        <div class="overlay-3" onclick="expandTab('WS');">
-          <div class="overlay-text center">
-            <h3>Clubs</h3>
-          </div>
-        </div>
-      </div>
-      <div class="column-grid-3">
-        <img src="img/windsurf.jpg" alt="WS" style="width:100%">
-        <div class="overlay-3" onclick="expandTab('WS');">
-          <div class="overlay-text center">
-            <h3>Hobbies</h3>
-          </div>
-        </div>
-      </div>
-      <div class="column-grid-3">
-        <img src="img/perry.jpg" alt="WS" style="width:100%">
-        <div class="overlay-3" onclick="expandTab('WS');">
-          <div class="overlay-text center">
-            <h3>Leadership</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row-grid">
-      <div class="container-grid">
-        <div id="expandedWS">
-          <div class="container border-side">
-            <div class="row">
-              <div class="col">
-                <h1>Windsurfing</h1>
-              </div>
-              <div class="col">
-                <span onclick="expandedWS.parentElement.style.display='none'" class="closebtn" style="color:black">&times;</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-    <div>
-      <div class="" id="footer">
-        <h3>Bye.</h3>
-      </div>
-    </div>
-
   </body>
 </html>
