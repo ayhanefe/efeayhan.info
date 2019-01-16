@@ -63,7 +63,6 @@ ul {
   transition: background-size .4s ease;
   background: linear-gradient(to bottom, transparent 62%, #00E5EE 0) left center/0% 75% no-repeat;
   cursor: pointer;
-  padding: 0px 5px 0px 5px;
 }
 
 .link:hover {
