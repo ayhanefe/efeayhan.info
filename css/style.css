@@ -60,18 +60,16 @@ ul {
   font-size: 25px;
   font-weight: 400;
   color: #141414;
-  transition: background-size .4s ease;
-  background: linear-gradient(to bottom, transparent 62%, #00E5EE 0) left center/0% 75% no-repeat;
+  transition: .5s ease;
   cursor: pointer;
 }
 
 .link:hover {
-  color: inherit;
-  background-size: 100% 100%;
+  color: #00E5EE;
 }
 
 .active {
-  background-size: 100% 100%;
+  color: #00b5bb;
 }
 
 .del {
